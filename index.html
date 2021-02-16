@@ -43,15 +43,16 @@
     }
 
     .searchbar {
-        width: 450px;
+        width: 550px;
         font-family: arial, sans-serif;
-        word-wrap: break-word;
         margin-top: -37px;
-        height: 34px;
+        height: 37px;
         font-size: 16px;
         position: relative;
         top: 330px;
-        right: 210px;
+        right: 275px;
+        border-radius: 25px;
+        border-style: solid;
     }
 
     .header-buttons {
@@ -60,7 +61,9 @@
         margin: 0 5px;
         color: #222;
         font-family: arial,sans-serif;
-
+        position: relative;
+        right: 35px;
+        font-size: 14px;
     }
   
     .search-buttons {
@@ -85,7 +88,7 @@
         
         width: 100%;
         background-color: rgb(242, 242, 242);
-        padding: 0 20px;
+        padding: 1px;
         font-family: arial,sans-serif;
         font-size: 14px;
         color: #222;
@@ -95,7 +98,31 @@
 
     ul {
         list-style-type: none;
+    }
+
+    li {
         display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    .carbon-neutral {
+        position: relative;
+        bottom: 10px;
+        left: 47%;
+    }
+
+    .footer-right {
+        position: absolute;
+        right: 0%;
     }
 
    </style>
@@ -117,7 +144,7 @@
     
     <div class="searchbar-center">
         <form>
-            <input type="text" class="searchbar" maxlength="2048" >
+            <input type="text" class="searchbar" style="z-index: 1000 !important;">
         </form>
     </div>
     
@@ -136,10 +163,18 @@
 
     <footer>
 
-    <ul style="display: inline;">
+    <ul>
         <li><a href="">Advertising</a></li>
         <li><a href="">Business</a></li>
         <li><a href="">How Search works</a></li>
+    </ul>
+
+    <a href="" class="carbon-neutral">Carbon neutral since 2007</a>
+
+    <ul class="footer-right">
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Settings</a></li>
     </ul>
 
     </footer>
