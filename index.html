@@ -50,9 +50,10 @@
         font-size: 16px;
         position: relative;
         top: 330px;
-        right: 275px;
+        right: -1000px;
         border-radius: 25px;
         border-style: solid;
+        background-color: rgba(0, 0, 0, 0)
     }
 
     .header-buttons {
@@ -125,12 +126,63 @@
         right: 0%;
     }
 
+    .sign-in-button {
+        color: rgb(255,255,255);
+        background-color: rgb(26,115,232);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-right: 8px;
+        min-width: 96px;
+        padding: 9px 23px;
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: .25px;
+        line-height: 16px;
+        font-weight: 500;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: transparent;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: transparent;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        display: inline-block;
+        position: relative;
+        z-index: auto;
+        left: 100%;
+    
+
+    }
    </style>
     
    <header>
     <ul>
         <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="header-buttons">About</a></li>
         <li><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" class="header-buttons">Store</a></li>
+    </ul>
+        <button class="sign-in-button">Sign In</button>
+    <ul>
+        <li><a href="">Gmail</a></li>
+        <li><a href="">Images</a></li>
     </ul>
    </header>
    
@@ -142,7 +194,7 @@
     </div>
     </div>   
     
-    <div class="searchbar-center">
+    <div>
         <form>
             <input type="text" class="searchbar" style="z-index: 1000 !important;">
         </form>
