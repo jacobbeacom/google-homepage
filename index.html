@@ -33,13 +33,17 @@
         transform: translate(-50%,-45%);
 
     }
-
+    .searchbar-container{
+        height: 37px;
+        position: relative;
+        top: 330px;
+    }
     .searchbar-center {
         margin: 0;
-        position: relative;
-        top: 80%;
+        position: absolute;
+        top: 50%;
         left: 50%;
-
+        transform: translate(-50%, -50%);
     }
 
     .searchbar {
@@ -48,9 +52,6 @@
         margin-top: -37px;
         height: 37px;
         font-size: 16px;
-        position: relative;
-        top: 330px;
-        right: -1000px;
         border-radius: 25px;
         border-style: solid;
         background-color: rgba(0, 0, 0, 0)
@@ -92,9 +93,10 @@
         padding: 1px;
         font-family: arial,sans-serif;
         font-size: 14px;
-        color: #222;
+        color: #70757a;
         position: fixed;
         bottom: 0px;
+        margin: 0;
     }
 
     ul {
@@ -107,23 +109,24 @@
         margin-right: 5px;
         margin-top: 0px;
         margin-bottom: 0px;
-        padding: 5px;
+        padding: 0px;
     }
 
     a {
         text-decoration: none;
+        color: #222;
     }
 
 
     .carbon-neutral {
-        position: relative;
-        bottom: 10px;
+        position: absolute;
         left: 47%;
+        top: 30%
     }
 
     .footer-right {
-        position: absolute;
-        right: 0%;
+        position: relative;
+        left: 90%;
     }
 
     .sign-in-button {
@@ -167,11 +170,38 @@
         border-image-width: 1;
         display: inline-block;
         position: relative;
-        z-index: auto;
-        left: 100%;
-    
+        border-radius: 4px;
 
     }
+
+        .sign-in-alignment {
+            position: absolute;
+            left: 95%;
+            top: 1.5%;
+        }
+
+        .gmail-images-alignment {
+            position: absolute;
+            left: 87%;
+            top: 1.2%;
+            font-family: arial;
+            font-size: 14px;
+            color: #222
+        }
+
+        .google-apps-icon {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 1.9%;
+            left: 93.4%;
+        }
+
+        .footer-left {
+            position: absolute;
+            right: 87%;
+            word-spacing: 3px;
+        }
    </style>
     
    <header>
@@ -179,11 +209,17 @@
         <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="header-buttons">About</a></li>
         <li><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" class="header-buttons">Store</a></li>
     </ul>
-        <button class="sign-in-button">Sign In</button>
-    <ul>
-        <li><a href="">Gmail</a></li>
-        <li><a href="">Images</a></li>
+        
+    <div class="sign-in-alignment">    
+    <button class="sign-in-button">Sign In</button>
+    </div>
+    
+    <ul class="gmail-images-alignment">
+        <li><a href="https://www.google.com/gmail">Gmail</a></li>
+        <li><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
     </ul>
+
+    <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" alt="Google Apps Icon" class="google-apps-icon"> 
    </header>
    
     <body>
@@ -194,12 +230,13 @@
     </div>
     </div>   
     
-    <div>
+    <div class="searchbar-container">
+    <div class="searchbar-center">
         <form>
             <input type="text" class="searchbar" style="z-index: 1000 !important;">
         </form>
     </div>
-    
+    </div>
     <div class="search-button-container">
         <div class="search-button-center">
         <button class="search-buttons">Google Search</button>
@@ -214,21 +251,23 @@
 
 
     <footer>
-
-    <ul>
+    <div class="footer-left">
+        <ul>
         <li><a href="">Advertising</a></li>
         <li><a href="">Business</a></li>
         <li><a href="">How Search works</a></li>
-    </ul>
-
-    <a href="" class="carbon-neutral">Carbon neutral since 2007</a>
-
-    <ul class="footer-right">
+        </ul>
+    </div>   
+    <div class="carbon-neutral">      
+            <a href="">Carbon neutral since 2007</a>
+        </div> 
+     <div class="footer-right">
+        <ul>
         <li><a href="">Privacy</a></li>
         <li><a href="">Terms</a></li>
         <li><a href="">Settings</a></li>
-    </ul>
-
+        </ul>
+        </div>
     </footer>
 
 
